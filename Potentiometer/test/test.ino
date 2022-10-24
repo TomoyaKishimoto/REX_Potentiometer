@@ -1,8 +1,8 @@
 const int INPUT_PIN = A0;    // 入力ピンをA0に固定
-const int LED_PIN = 10;    // 入力ピンをA0に固定
+const int LED_PIN = 9;
 int VOLUME;                  // 変数を整数型で宣言
 int brightness;
- 
+
 void setup(){
   Serial.begin(9600);  // シリアル通信の開始
 }
