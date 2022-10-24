@@ -21,7 +21,7 @@ void setup(){
 void loop(){
  
   volume = analogRead(INPUT_PIN);        // 電圧の読み取り, 値は0~1023の大きさ
-  volume = map(volume, 1023, 0, 9, 0);   // volumeが0~になるように変換
+  volume = map(volume, 1023, 0, 9, 0);   // volumeが0~9になるように変換
   String temp = String(volume);
   nums[place] = temp[0];
 
