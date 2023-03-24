@@ -1,8 +1,8 @@
-#include <LiquidCrystal.h> // LCDのライブラリを使う
+#include <LiquidCrystal.h>   // LCDのライブラリを使う
 
 LiquidCrystal lcd( 8, 9, 10, 11, 12, 13 ); // LiquidCrystal型の変数を生成、使うピンの設定をしている
 const int INPUT_PIN = A0;    // 入力ピンをA0に固定
-const int LED_PIN = 10;    // 入力ピンをA0に固定
+const int LED_PIN = 10;      // 入力ピンをA0に固定
 int VOLUME;                  // 変数を整数型で宣言
  
 void setup(){

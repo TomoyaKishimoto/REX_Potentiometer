@@ -21,7 +21,7 @@ void setup(){
 void loop(){
  
   volume = analogRead(INPUT_PIN);        // 電圧の読み取り, 値は0~1023の大きさ
-  volume = map(volume, 1023, 0, 9, 0);   // volumeが0~9になるように変換
+  volume = map(volume, 1023, 0, 9, 0);   // volumeが0~5[V]になるように変換
   String temp = String(volume);
   nums[place] = temp[0];
 
@@ -38,7 +38,7 @@ void loop(){
   lcd.setCursor(0, 0); // カーソルの位置を(列, 行)に合わせる
   if(place >= 3)
   {
-    lcd.print("OPEN");     // OPENを表示する
+    lcd.print("OPEN"); // OPENを表示する
   }
   else
   {
